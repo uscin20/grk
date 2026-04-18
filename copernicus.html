@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>FIND ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+<div class="header">
+    <!-- <img src="" class="logo"> -->
+    <div class="title">FIND ME</div>
+    <!-- <img src="" class="logor"> -->
+</div>
+
+<div class="main">
+    <!-- <img src="" style="height:250px;"> -->
+    <!-- <h1>Instrukcja gry</h1> -->
+    <p style="font-family: courier; font-size: 20px; font-weigt: bold; text-align: center;">Gratulacje! Masz trop.<br>Tu masz kilka ciekawostek o pewnej planecie:<br>
+      1. Ze względu na bliskość Słońca, jest trudny do zaobserwowania z Ziemi. Można go dostrzec jedynie krótko przed wschodem lub po zachodzie Słońca.<br>2. Jak policzysz litery tej planety
+      to na ulicy, na której jesteś ten numer zabierze cię na dalszy etap poszukiwań.<br><br>Jesteś na miejscu?<br>Obok powinna być kamienna tablica.<br>Z jakiej była sławna osoba na niej wspomniana?</p>
+    <br>
+
+    <div class="password-check">
+    <input type="text" id="password" placeholder="Rzecki" autocomplete="off">
+    <button onclick="checkPassword()">>send<</button>
+    </div>
+<script>
+    const correctPassword = "pamiętnikarz";
+
+    function checkPassword() {
+        const userInput = document.getElementById("password").value;
+
+        if(userInput === correctPassword) {
+            window.location.href = "rzecki";
+        } else {
+            alert("error");
+        }
+    }
+</script>
+
+<!-- <button onclick="window.location.href='start'">enter</button> -->
+
+</div>
+
+<div class="footer">
+    © 2026 Wiktor Uścinowicz
+</div>
+</body>
+</html>
