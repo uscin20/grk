@@ -19,15 +19,14 @@
     <!-- <h1>Instrukcja gry</h1> -->
     <p style="font-family: courier; font-size: 20px; font-weigt: bold; text-align: center;">Wstrzymał słońce, ruszył Ziemię - głosi cytat stary,<br>Choć z brązu, to wciąż pełen naukowej wiary.</p>
     <br>
-<!--
-    <div class="password-check">
-    <input type="text" id="password" placeholder="****" autocomplete="off">
-    <button onclick="checkPassword()">Sprawdź</button>
-    </div>
 
+    <div class="password-check">
+    <input type="text" id="password" placeholder="" autocomplete="off">
+    <button onclick="checkPassword()">>start<</button>
+    </div>
 <script>
     // Tutaj wpisz swoje hasło
-    const correctPassword = "1955";
+    const correctPassword = "Kopernik";
 
     function checkPassword() {
         const userInput = document.getElementById("password").value;
@@ -35,13 +34,12 @@
         if(userInput === correctPassword) {
             window.location.href = "win.html";
         } else {
-            alert("Spróbuj jeszcze raz.");
+            alert("error");
         }
     }
 </script>
--->
 
-<button onclick="window.location.href='copernicus'">start</button>
+<!-- <button onclick="window.location.href='copernicus'">start</button> -->
 
 </div>
 
